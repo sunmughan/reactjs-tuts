@@ -1,0 +1,10 @@
+// CLASS COMPONENT IN REACT JS
+import { Component } from "react";
+
+class Welcome extends Component {
+    render() {
+        return <h1>Hello peterrrrrrr!!!!</h1>
+    }
+}
+
+export default Welcome;
