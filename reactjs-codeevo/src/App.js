@@ -1,6 +1,6 @@
 import { Component } from "react";
 import "./App.css";
-import NameList from "./components/NameList";
+import Form from "./components/Form";
 // import Greet from "./components/Greet";
 // import Welcome from './components/Welcome';
 // import Hello from './components/Hello';
@@ -13,6 +13,8 @@ import NameList from "./components/NameList";
 // import EventBind from "./components/EventBind";
 // import ParentComponent from "./components/ParentComponent";
 // import UserGreeting from "./components/UserGreeting";
+// import NameList from "./components/NameList";
+// import Stylesheet from "./components/Stylesheet";
 
 class App extends Component {
   render() {
@@ -40,7 +42,11 @@ class App extends Component {
         {/* <EventBind /> */}
         {/* <ParentComponent /> */}
         {/* <UserGreeting /> */}
-        <NameList />
+        {/* <NameList /> */}
+        {/* <Stylesheet primary={true} /> */}
+        {/* <Stylesheet primary={false} /> */}
+        {/* <h1 className="error">DONT'T USE NORMAL STYLING USE CSS MODULES</h1> */}
+        <Form />
       </div>
     );
   }
