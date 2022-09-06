@@ -1,6 +1,5 @@
 import { Component } from "react";
 import "./App.css";
-import Form from "./components/Form";
 // import Greet from "./components/Greet";
 // import Welcome from './components/Welcome';
 // import Hello from './components/Hello';
@@ -15,6 +14,8 @@ import Form from "./components/Form";
 // import UserGreeting from "./components/UserGreeting";
 // import NameList from "./components/NameList";
 // import Stylesheet from "./components/Stylesheet";
+// import Form from "./components/Form";
+import LifecycleA from "./components/LifecycleA";
 
 class App extends Component {
   render() {
@@ -46,7 +47,8 @@ class App extends Component {
         {/* <Stylesheet primary={true} /> */}
         {/* <Stylesheet primary={false} /> */}
         {/* <h1 className="error">DONT'T USE NORMAL STYLING USE CSS MODULES</h1> */}
-        <Form />
+        {/* <Form /> */}
+        <LifecycleA />
       </div>
     );
   }
