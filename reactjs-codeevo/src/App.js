@@ -1,5 +1,4 @@
 import { Component } from "react";
-import "./App.css";
 // import Greet from "./components/Greet";
 // import Welcome from './components/Welcome';
 // import Hello from './components/Hello';
@@ -15,7 +14,11 @@ import "./App.css";
 // import NameList from "./components/NameList";
 // import Stylesheet from "./components/Stylesheet";
 // import Form from "./components/Form";
-import LifecycleA from "./components/LifecycleA";
+// import LifecycleA from "./components/LifecycleA";
+// import FragmentDemo from "./components/FragmentDemo";
+// import Table from "./components/Table";
+// import PureComp from "./components/PureComp";
+import ParentComp from "./components/ParentComp";
 
 class App extends Component {
   render() {
@@ -48,7 +51,11 @@ class App extends Component {
         {/* <Stylesheet primary={false} /> */}
         {/* <h1 className="error">DONT'T USE NORMAL STYLING USE CSS MODULES</h1> */}
         {/* <Form /> */}
-        <LifecycleA />
+        {/* <LifecycleA /> */}
+        {/* <FragmentDemo /> */}
+        {/* <Table /> */}
+        {/* <PureComp /> */}
+        <ParentComp />
       </div>
     );
   }
