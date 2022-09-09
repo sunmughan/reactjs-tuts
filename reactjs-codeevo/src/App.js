@@ -1,4 +1,6 @@
 import { Component } from "react";
+import ErrorBoundary from "./components/ErrorBoundary";
+import HeroErrorBoundary from "./components/HeroErrorBoundary";
 // import Greet from "./components/Greet";
 // import Welcome from './components/Welcome';
 // import Hello from './components/Hello';
@@ -18,7 +20,11 @@ import { Component } from "react";
 // import FragmentDemo from "./components/FragmentDemo";
 // import Table from "./components/Table";
 // import PureComp from "./components/PureComp";
-import ParentComp from "./components/ParentComp";
+// import ParentComp from "./components/ParentComp";
+// import RefsDemo from "./components/RefsDemo";
+// import FocusInput from "./components/FocusInput";
+// import FRParentInput from "./components/FRParentInput";
+// import PortalDemo from "./components/PortalDemo";
 
 class App extends Component {
   render() {
@@ -55,7 +61,25 @@ class App extends Component {
         {/* <FragmentDemo /> */}
         {/* <Table /> */}
         {/* <PureComp /> */}
-        <ParentComp />
+        {/* <ParentComp /> */}
+        {/* <RefsDemo /> */}
+        {/* <FocusInput /> */}
+        {/* <FRParentInput /> */}
+        {/* <PortalDemo /> */}
+        {/* <ErrorBoundary>
+          <HeroErrorBoundary name={"Naruto"} />
+          <HeroErrorBoundary name={"Goku"} />
+          <HeroErrorBoundary name={"Orochimaru"} />
+        </ErrorBoundary> */}
+        <ErrorBoundary>
+          <HeroErrorBoundary name={"Naruto"} />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <HeroErrorBoundary name={"Goku"} />
+        </ErrorBoundary>
+        <ErrorBoundary>
+          <HeroErrorBoundary name={"Orochimaru"} />
+        </ErrorBoundary>
       </div>
     );
   }
