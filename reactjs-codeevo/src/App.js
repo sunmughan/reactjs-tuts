@@ -1,6 +1,4 @@
 import { Component } from "react";
-import ErrorBoundary from "./components/ErrorBoundary";
-import HeroErrorBoundary from "./components/HeroErrorBoundary";
 // import Greet from "./components/Greet";
 // import Welcome from './components/Welcome';
 // import Hello from './components/Hello';
@@ -25,6 +23,14 @@ import HeroErrorBoundary from "./components/HeroErrorBoundary";
 // import FocusInput from "./components/FocusInput";
 // import FRParentInput from "./components/FRParentInput";
 // import PortalDemo from "./components/PortalDemo";
+// import ErrorBoundary from "./components/ErrorBoundary";
+// import HeroErrorBoundary from "./components/HeroErrorBoundary";
+// import ClickCounter from "./components/ClickCounter";
+// import HoverCounter from "./components/HoverCounter";
+import ClickCounterTwo from "./components/ClickCounterTwo";
+import CounterRenderProps from "./components/CounterRenderProps";
+import HoverCounterTwo from "./components/HoverCounterTwo";
+// import User from "./components/User";
 
 class App extends Component {
   render() {
@@ -71,7 +77,7 @@ class App extends Component {
           <HeroErrorBoundary name={"Goku"} />
           <HeroErrorBoundary name={"Orochimaru"} />
         </ErrorBoundary> */}
-        <ErrorBoundary>
+        {/* <ErrorBoundary>
           <HeroErrorBoundary name={"Naruto"} />
         </ErrorBoundary>
         <ErrorBoundary>
@@ -79,7 +85,32 @@ class App extends Component {
         </ErrorBoundary>
         <ErrorBoundary>
           <HeroErrorBoundary name={"Orochimaru"} />
-        </ErrorBoundary>
+        </ErrorBoundary> */}
+        {/* <ClickCounter name={"Peter"} />
+        <HoverCounter /> */}
+        {/* <ClickCounterTwo />
+        <HoverCounterTwo /> */}
+        {/* <User render={(isLoggedIn) => (isLoggedIn ? "Peter" : "Guest")} /> */}
+        {/* <CounterRenderProps
+          render={(count, incrementCount) => (
+            <ClickCounterTwo count={count} incrementCount={incrementCount} />
+          )}
+        />
+        <CounterRenderProps
+          render={(count, incrementCount) => (
+            <HoverCounterTwo count={count} incrementCount={incrementCount} />
+          )}
+        /> */}
+        <CounterRenderProps>
+          {(count, incrementCount) => (
+            <ClickCounterTwo count={count} incrementCount={incrementCount} />
+          )}
+        </CounterRenderProps>
+        <CounterRenderProps>
+          {(count, incrementCount) => (
+            <HoverCounterTwo count={count} incrementCount={incrementCount} />
+          )}
+        </CounterRenderProps>
       </div>
     );
   }
