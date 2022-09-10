@@ -1,4 +1,4 @@
-import { Component } from "react";
+import React, { Component } from "react";
 // import Greet from "./components/Greet";
 // import Welcome from './components/Welcome';
 // import Hello from './components/Hello';
@@ -27,10 +27,15 @@ import { Component } from "react";
 // import HeroErrorBoundary from "./components/HeroErrorBoundary";
 // import ClickCounter from "./components/ClickCounter";
 // import HoverCounter from "./components/HoverCounter";
-import ClickCounterTwo from "./components/ClickCounterTwo";
-import CounterRenderProps from "./components/CounterRenderProps";
-import HoverCounterTwo from "./components/HoverCounterTwo";
+// import ClickCounterTwo from "./components/ClickCounterTwo";
+// import CounterRenderProps from "./components/CounterRenderProps";
+// import HoverCounterTwo from "./components/HoverCounterTwo";
 // import User from "./components/User";
+// import ComponentC from "./components/context-api/ComponentC";
+// import ComponentG from "./components/context-api/ComponentG";
+// import { UserProvider } from "./components/context-api/userContext";
+// import PostList from "./components/http/PostList";
+import PostForm from "./components/http/PostForm";
 
 class App extends Component {
   render() {
@@ -101,7 +106,7 @@ class App extends Component {
             <HoverCounterTwo count={count} incrementCount={incrementCount} />
           )}
         /> */}
-        <CounterRenderProps>
+        {/* <CounterRenderProps>
           {(count, incrementCount) => (
             <ClickCounterTwo count={count} incrementCount={incrementCount} />
           )}
@@ -110,7 +115,13 @@ class App extends Component {
           {(count, incrementCount) => (
             <HoverCounterTwo count={count} incrementCount={incrementCount} />
           )}
-        </CounterRenderProps>
+        </CounterRenderProps> */}
+        {/* <UserProvider value={"Peter"}>
+          <ComponentC />
+        </UserProvider>
+        <ComponentG /> */}
+        {/* <PostList /> */}
+        <PostForm />
       </div>
     );
   }
