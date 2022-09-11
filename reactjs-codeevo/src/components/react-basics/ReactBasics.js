@@ -9,6 +9,15 @@ import React, { Component } from "react";
 // import ReactStyling from "./react-styling/ReactStyling";
 // import ReactFormHandling from "./react-form-handling/ReactFormHandling";
 // import ReactLifecycles from "./react-lifecycles/ReactLifecycles";
+// import ReactFragments from "./react-fragments/ReactFragments";
+// import ReactPureComponent from "./react-pure-components/ReactPureComponent";
+// import ReactRefs from "./react-refs/ReactRefs";
+// import ReactPortals from "./react-portals/ReactPortals";
+// import ReactErrorBoundary from "./react-error-boundary/ReactErrorBoundary";
+// import ReactHOCs from "./react-higher-order-components/ReactHOCs";
+// import ReactRenderProps from "./react-render-props/ReactRenderProps";
+// import ReactContextApi from "./react-context-api/ReactContextApi";
+import ReactHTTP from "./react-http/ReactHTTP";
 
 export class ReactBasics extends Component {
   render() {
@@ -40,6 +49,33 @@ export class ReactBasics extends Component {
 
         {/* COMPONENT LIFE CYCLES IN REACT JS */}
         {/* <ReactLifecycles /> */}
+
+        {/* FRAGMENTS IN REACT JS */}
+        {/* <ReactFragments /> */}
+
+        {/* PURE COMPONENTS IN REACT JS */}
+        {/* <ReactPureComponent /> */}
+
+        {/* REFS IN REACT JS */}
+        {/* <ReactRefs /> */}
+
+        {/* PORTALS IN REACT JS */}
+        {/* <ReactPortals /> */}
+
+        {/* ERROR BOUNDARY IN REACT JS */}
+        {/* <ReactErrorBoundary /> */}
+
+        {/* HOCs(HIGHER ORDER COMPONENTS) IN REACT JS */}
+        {/* <ReactHOCs /> */}
+
+        {/* RENDER PROPS IN REACT JS */}
+        {/* <ReactRenderProps /> */}
+
+        {/* REACT JS CONTEXT API */}
+        {/* <ReactContextApi /> */}
+
+        {/*  */}
+        <ReactHTTP />
       </>
     );
   }
