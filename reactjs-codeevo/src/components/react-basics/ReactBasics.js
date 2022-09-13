@@ -1,5 +1,6 @@
 // REACT BASICS
-import React, { Component } from "react";
+// import React from "react";
+import { Component } from "react";
 // import ReactComponents from "./react-components/ReactComponents";
 // import ReactPropsAndStates from "./react-props-and-states/ReactPropsAndStates";
 // import ReactEventHandling from "./react-event-handling/ReactEventHandling";
@@ -17,7 +18,7 @@ import React, { Component } from "react";
 // import ReactHOCs from "./react-higher-order-components/ReactHOCs";
 // import ReactRenderProps from "./react-render-props/ReactRenderProps";
 // import ReactContextApi from "./react-context-api/ReactContextApi";
-import ReactHTTP from "./react-http/ReactHTTP";
+// import ReactHTTP from "./react-http/ReactHTTP";
 
 export class ReactBasics extends Component {
   render() {
@@ -74,8 +75,8 @@ export class ReactBasics extends Component {
         {/* REACT JS CONTEXT API */}
         {/* <ReactContextApi /> */}
 
-        {/*  */}
-        <ReactHTTP />
+        {/* HTTP IN REACT JS */}
+        {/* <ReactHTTP /> */}
       </>
     );
   }
