@@ -1,4 +1,5 @@
 // IMPLEMENTING COUNTER AND PAGE TITLE CHANGE WITH LIFECYCLE METHODS IN CLASS COMPONENT
+// CONDITIONALLY RUNNING USE EFFECT HOOK IN CLASS COMPONENT
 import React, { Component } from "react";
 
 class ClassCounterOne extends Component {
@@ -7,6 +8,7 @@ class ClassCounterOne extends Component {
 
     this.state = {
       count: 0,
+      name: "",
     };
   }
 
@@ -15,7 +17,10 @@ class ClassCounterOne extends Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    document.title = `Clicked ${this.state.count} times`;
+    if (prevState.count !== this.state.count) {
+      console.log("updating the dom title.");
+      document.title = `Clicked ${this.state.count} times`;
+    }
   }
 
   incrementCounter = () => {
@@ -25,6 +30,13 @@ class ClassCounterOne extends Component {
   render() {
     return (
       <>
+        <input
+          type={"text"}
+          value={this.state.name}
+          onChange={(event) => {
+            this.setState({ name: event.target.value });
+          }}
+        />
         <button onClick={this.incrementCounter}>
           button clicked {this.state.count} times
         </button>
