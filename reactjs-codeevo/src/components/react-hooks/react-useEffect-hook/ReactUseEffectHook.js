@@ -5,7 +5,8 @@ import React from "react";
 // import HookMouse from "./useEffect-hook-runonce/HookMouse";
 // import HookContainer from "./useEffect-hook-runonce/HookContainer";
 // import IntervalClassCounter from "./useEffect-hook-incorrect-methods/IntervalClassCounter";
-import IntervalHookCounter from "./useEffect-hook-incorrect-methods/IntervalHookCounter";
+// import IntervalHookCounter from "./useEffect-hook-incorrect-methods/IntervalHookCounter";
+import DataFetching from "./useEffect-hook-fetch-data/DataFetching";
 
 const ReactUseEffectHook = () => {
   return (
@@ -29,7 +30,10 @@ const ReactUseEffectHook = () => {
       {/* <IntervalClassCounter /> */}
 
       {/* USE EFFECT WITH INCORRECT DEPENDENCY IN REACT JS */}
-      <IntervalHookCounter />
+      {/* <IntervalHookCounter /> */}
+
+      {/* FETCHING DATA USING USE EFFECT HOOK IN REACT JS */}
+      <DataFetching />
     </>
   );
 };
