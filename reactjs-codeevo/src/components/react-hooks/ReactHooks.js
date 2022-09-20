@@ -8,9 +8,11 @@ const ReactHooks = () => {
     <>
       {/* USESTATE HOOK IN REACT JS */}
       {/* <ReactUseStateHook /> */}
+
       {/* USEEFFECT HOOK IN REACT JS */}
       {/* <ReactUseEffectHook /> */}
-      USECONTEXT HOOK IN REACT JS
+
+      {/* USECONTEXT HOOK IN REACT JS */}
       <ReactUseContextHook />
     </>
   );
