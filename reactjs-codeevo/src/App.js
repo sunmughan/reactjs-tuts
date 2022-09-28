@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 // import ReactBasics from "./components/react-basics/ReactBasics";
-import ReactHooks from "./components/react-hooks/ReactHooks";
+// import ReactHooks from "./components/react-hooks/ReactHooks";
+import ReactPractical from "./components/react-practical/ReactPractical";
 
 class App extends Component {
   render() {
@@ -10,7 +11,10 @@ class App extends Component {
         {/* <ReactBasics /> */}
 
         {/* HOOKS IN REACT JS */}
-        <ReactHooks />
+        {/* <ReactHooks /> */}
+
+        {/* PRACTICAL REACT JS */}
+        <ReactPractical />
       </div>
     );
   }
