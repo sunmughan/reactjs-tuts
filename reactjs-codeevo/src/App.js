@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 // import ReactBasics from "./components/react-basics/ReactBasics";
 // import ReactHooks from "./components/react-hooks/ReactHooks";
+
 import ReactPractical from "./components/react-practical/ReactPractical";
 
 class App extends Component {
