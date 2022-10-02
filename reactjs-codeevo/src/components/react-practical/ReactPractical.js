@@ -1,6 +1,5 @@
 // PRACTICAL REACT JS
 import React from "react";
-import ReactSpinnersLoadingIndicators from "./react-spinners-loading-indicators/ReactSpinnersLoadingIndicators";
 // import ReactIcons from "./react-icons/ReactIcons";
 // import ReactToastify from "./react-toastify/ReactToastify";
 // import ReactModal from "./react-modal/ReactModal";
@@ -12,6 +11,8 @@ import ReactSpinnersLoadingIndicators from "./react-spinners-loading-indicators/
 // import ReactDatepicker from "./react-datepicker/ReactDatepicker";
 // import ReactMdxDeck from "./react-mdx-deck/ReactMdxDeck";
 // import ReactPlayerVideo from "./react-player-video/ReactPlayerVideo";
+// import ReactSpinnersLoadingIndicators from "./react-spinners-loading-indicators/ReactSpinnersLoadingIndicators";
+import ReactCharts from "./react-charts/ReactCharts";
 
 const ReactPractical = () => {
   return (
@@ -50,7 +51,10 @@ const ReactPractical = () => {
       {/* <ReactPlayerVideo /> */}
 
       {/* LOADING INDICATORS IN REACT JS */}
-      <ReactSpinnersLoadingIndicators />
+      {/* <ReactSpinnersLoadingIndicators /> */}
+
+      {/* CHARTS IN REACT JS */}
+      <ReactCharts />
     </>
   );
 };
