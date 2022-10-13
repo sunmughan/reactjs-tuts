@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 // import ReactBasics from "./components/react-basics/ReactBasics";
 // import ReactHooks from "./components/react-hooks/ReactHooks";
-import ReactPractical from "./components/react-practical/ReactPractical";
+// import ReactPractical from "./components/react-practical/ReactPractical";
+import ReactFormik from "./components/react-formik/ReactFormik";
 
 class App extends Component {
   render() {
@@ -14,7 +15,10 @@ class App extends Component {
         {/* <ReactHooks /> */}
 
         {/* PRACTICAL REACT JS */}
-        <ReactPractical />
+        {/* <ReactPractical /> */}
+
+        {/* FORMIK IN REACT JS */}
+        <ReactFormik />
       </div>
     );
   }
