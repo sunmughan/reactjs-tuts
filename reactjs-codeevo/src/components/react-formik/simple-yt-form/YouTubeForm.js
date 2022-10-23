@@ -40,7 +40,7 @@
 //             {...formik.getFieldProps("name")}
 //           />
 //           {formik.touched.name && formik.errors.name ? (
-//             <div className={styles.error}>{formik.errors.name}</div>
+//             <div >{formik.errors.name}</div>
 //           ) : null}
 //         </div>
 //         <div className={styles.formControl}>
@@ -52,7 +52,7 @@
 //             {...formik.getFieldProps("email")}
 //           />
 //           {formik.touched.email && formik.errors.email ? (
-//             <div className={styles.error}>{formik.errors.email}</div>
+//             <div >{formik.errors.email}</div>
 //           ) : null}
 //         </div>
 //         <div className={styles.formControl}>
@@ -64,7 +64,7 @@
 //             {...formik.getFieldProps("channel")}
 //           />
 //           {formik.touched.channel && formik.errors.channel ? (
-//             <div className={styles.error}>{formik.errors.channel}</div>
+//             <div >{formik.errors.channel}</div>
 //           ) : null}
 //         </div>
 //         <div>
@@ -81,17 +81,31 @@ import React from "react";
 import styles from "./YouTubeForm.module.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import TextError from "./TextError";
 
 let initialValues = {
   name: "peter",
   email: "",
   channel: "",
+  comments: "",
+  address: "",
+  social: {
+    facebook: "",
+    twitter: "",
+  },
+  phoneNumbers: ["", ""],
 };
 
 const validationSchema = Yup.object({
   name: Yup.string().required("Required!"),
   email: Yup.string().email("Invalid Email Format!").required("Required!"),
   channel: Yup.string().required("Required!"),
+  comments: Yup.string().required("Required!"),
+  address: Yup.string().required("Required!"),
+  social: Yup.object().shape({
+    facebook: Yup.string().required("Required!"),
+    twitter: Yup.string().required("Required!"),
+  }),
 });
 
 let onSubmit = (values) => {
@@ -109,18 +123,101 @@ const YouTubeForm = () => {
         <Form>
           <div className={styles.formControl}>
             <label htmlFor="name">Name</label>
-            <Field type={"text"} id="name" name="name" />
-            <ErrorMessage name="name" className={styles.error} />
+            <Field type={"text"} id="name" name="name" placeholder="Name" />
+            <ErrorMessage
+              name="name"
+              component={TextError}
+              // component={"div"}
+              // className={styles.error}
+            />
           </div>
           <div className={styles.formControl}>
             <label htmlFor="email">Email</label>
-            <Field type={"email"} id="email" name="email" />
-            <ErrorMessage name="email" className={styles.error} />
+            <Field type={"email"} id="email" name="email" placeholder="Email" />
+            <ErrorMessage name="email" component={TextError} />
           </div>
           <div className={styles.formControl}>
             <label htmlFor="channel">Channel</label>
-            <Field type={"text"} id="channel" name="channel" />
-            <ErrorMessage name="channel" className={styles.error} />
+            <Field
+              type={"text"}
+              id="channel"
+              name="channel"
+              placeholder="Channel"
+            />
+            <ErrorMessage name="channel" component={TextError} />
+          </div>
+          <div className={styles.formControl}>
+            <label htmlFor="channel">Channel</label>
+            <Field
+              as={"textarea"}
+              type={"text"}
+              id="comments"
+              name="comments"
+              placeholder="Comments"
+            />
+            <ErrorMessage name="comments">
+              {(errorMsg) => {
+                return <div className={styles.error}>{errorMsg}</div>;
+              }}
+            </ErrorMessage>
+          </div>
+          <div className={styles.formControl}>
+            <label htmlFor="address">Address</label>
+            <Field name="address" placeholder="address">
+              {(props) => {
+                // console.log(props);
+                let { field, form, meta } = props;
+                console.log(form);
+                return (
+                  <div>
+                    <input type={"text"} id="address" {...field} />
+                    {meta.touched && meta.error ? (
+                      <div className={styles.error}>{meta.error}</div>
+                    ) : null}
+                  </div>
+                );
+              }}
+            </Field>
+          </div>
+          <div className={styles.formControl}>
+            <label htmlFor="facebook">Facebook</label>
+            <Field
+              type={"text"}
+              id="facebook"
+              name="social.facebook"
+              placeholder="Facebook"
+            />
+            <ErrorMessage name="social.facebook" component={TextError} />
+          </div>
+          <div className={styles.formControl}>
+            <label htmlFor="twitter">Twitter</label>
+            <Field
+              type={"text"}
+              id="twitter"
+              name="social.twitter"
+              placeholder="Twitter"
+            />
+            <ErrorMessage name="social.twitter" component={TextError} />
+          </div>
+          <div className={styles.formControl}>
+            <label htmlFor="primaryPh">Primary Phone Number</label>
+            <Field
+              type={"text"}
+              id="primaryPh"
+              name="phoneNumbers[0]"
+              placeholder="Primary Phone Number"
+            />
+            {/* <ErrorMessage name="social.twitter" component={TextError} /> */}
+          </div>
+          <div className={styles.formControl}>
+            <label htmlFor="secondaryPh">Secondary Phone Number</label>
+            <Field
+              type={"text"}
+              id="secondaryPh"
+              name="phoneNumbers[1]"
+              placeholder="Secondary Phone Number"
+            />
+            {/* <ErrorMessage name="social.twitter" component={TextError} /> */}
           </div>
           <div>
             <button type="submit">Submit</button>
