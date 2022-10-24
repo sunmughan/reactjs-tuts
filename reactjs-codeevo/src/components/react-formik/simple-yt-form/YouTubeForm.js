@@ -79,7 +79,14 @@
 
 import React from "react";
 import styles from "./YouTubeForm.module.css";
-import { Formik, Form, Field, ErrorMessage, FieldArray } from "formik";
+import {
+  Formik,
+  Form,
+  Field,
+  ErrorMessage,
+  FieldArray,
+  FastField,
+} from "formik";
 import * as Yup from "yup";
 import TextError from "./TextError";
 
@@ -101,7 +108,7 @@ const validationSchema = Yup.object({
   name: Yup.string().required("Required!"),
   email: Yup.string().email("Invalid Email Format!").required("Required!"),
   channel: Yup.string().required("Required!"),
-  comments: Yup.string().required("Required!"),
+  // comments: Yup.string().required("Required!"),
   address: Yup.string().required("Required!"),
   social: Yup.object().shape({
     facebook: Yup.string().required("Required!"),
@@ -113,12 +120,23 @@ let onSubmit = (values) => {
   console.log(values);
 };
 
+const validateComments = (value) => {
+  let error;
+  if (!value) {
+    error = "Required!";
+  }
+  return error;
+};
+
 const YouTubeForm = () => {
   return (
     <Formik
       initialValues={initialValues}
       onSubmit={onSubmit}
       validationSchema={validationSchema}
+      // validateOnBlur={false}
+      // validateOnChange={false}
+      // validateOnMount={false}
     >
       <div className={styles.youtubeFormContainer}>
         <Form>
@@ -148,13 +166,14 @@ const YouTubeForm = () => {
             <ErrorMessage name="channel" component={TextError} />
           </div>
           <div className={styles.formControl}>
-            <label htmlFor="channel">Channel</label>
+            <label htmlFor="comments">Comments</label>
             <Field
               as={"textarea"}
               type={"text"}
               id="comments"
               name="comments"
               placeholder="Comments"
+              validate={validateComments}
             />
             <ErrorMessage name="comments">
               {(errorMsg) => {
@@ -164,11 +183,14 @@ const YouTubeForm = () => {
           </div>
           <div className={styles.formControl}>
             <label htmlFor="address">Address</label>
-            <Field name="address" placeholder="address">
+            <FastField name="address" placeholder="address">
               {(props) => {
-                // console.log(props);
-                let { field, form, meta } = props;
-                console.log(form);
+                // console.log("Field Rendered");
+                let {
+                  field,
+                  // form,
+                  meta,
+                } = props;
                 return (
                   <div>
                     <input type={"text"} id="address" {...field} />
@@ -178,7 +200,7 @@ const YouTubeForm = () => {
                   </div>
                 );
               }}
-            </Field>
+            </FastField>
           </div>
           <div className={styles.formControl}>
             <label htmlFor="facebook">Facebook</label>
@@ -224,9 +246,9 @@ const YouTubeForm = () => {
             <label>List of phoen numbers</label>
             <FieldArray name="phNumbers">
               {(FieldArrayProps) => {
-                console.log(FieldArrayProps);
                 const { push, remove, form } = FieldArrayProps;
                 const { values } = form;
+                console.log("errrr >> ", form.errors);
                 const { phNumbers } = values;
                 return (
                   <div>
