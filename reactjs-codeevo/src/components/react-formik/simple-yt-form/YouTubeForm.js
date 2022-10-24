@@ -79,7 +79,7 @@
 
 import React from "react";
 import styles from "./YouTubeForm.module.css";
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Formik, Form, Field, ErrorMessage, FieldArray } from "formik";
 import * as Yup from "yup";
 import TextError from "./TextError";
 
@@ -94,6 +94,7 @@ let initialValues = {
     twitter: "",
   },
   phoneNumbers: ["", ""],
+  phNumbers: [""],
 };
 
 const validationSchema = Yup.object({
@@ -218,6 +219,34 @@ const YouTubeForm = () => {
               placeholder="Secondary Phone Number"
             />
             {/* <ErrorMessage name="social.twitter" component={TextError} /> */}
+          </div>
+          <div className={StyleSheet.formControl}>
+            <label>List of phoen numbers</label>
+            <FieldArray name="phNumbers">
+              {(FieldArrayProps) => {
+                console.log(FieldArrayProps);
+                const { push, remove, form } = FieldArrayProps;
+                const { values } = form;
+                const { phNumbers } = values;
+                return (
+                  <div>
+                    {phNumbers.map((phNumber, index) => (
+                      <div key={index}>
+                        <Field name={`phNumbers[${index}]`} />
+                        {index > 0 && (
+                          <button type="button" onClick={() => remove(index)}>
+                            -
+                          </button>
+                        )}
+                        <button type="button" onClick={() => push(index)}>
+                          +
+                        </button>
+                      </div>
+                    ))}
+                  </div>
+                );
+              }}
+            </FieldArray>
           </div>
           <div>
             <button type="submit">Submit</button>
