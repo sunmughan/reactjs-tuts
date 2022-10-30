@@ -1,4 +1,3 @@
-import React from "react";
 import UserGreeting from "./conditional-rendering/UserGreeting";
 
 const ReactConditionalRendering = () => {

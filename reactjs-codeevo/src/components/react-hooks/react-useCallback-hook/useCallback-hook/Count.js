@@ -1,5 +1,4 @@
 // USECALLBACK HOOK IN REACT JS
-import React from "react";
 
 const Count = (props) => {
   const { text, count } = props;

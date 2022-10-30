@@ -1,5 +1,4 @@
 // FUNCTIONAL COMPONENT PROPS IN REACT JS
-import React from "react";
 
 // const GreetWithProp = (props) => {
 //   return (

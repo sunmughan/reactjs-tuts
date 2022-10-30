@@ -1,4 +1,3 @@
-import React from "react";
 import { UserProvider } from "./context-api/userContext";
 import ComponentC from "./context-api/ComponentC";
 import ComponentG from "./context-api/ComponentG";

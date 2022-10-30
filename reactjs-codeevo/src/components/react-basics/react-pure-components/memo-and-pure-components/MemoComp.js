@@ -1,5 +1,4 @@
 // MEMO IN REACT JS
-import React from "react";
 
 function MemoComp({ name }) {
   console.log("RENDERING THE MEMO COMPONENT.");

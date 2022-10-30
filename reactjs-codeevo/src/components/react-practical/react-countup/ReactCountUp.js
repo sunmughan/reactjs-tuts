@@ -1,4 +1,3 @@
-import React from "react";
 import CountUp, { useCountUp } from "react-countup";
 // import CountUp from "react-countup/build/CountUp";
 

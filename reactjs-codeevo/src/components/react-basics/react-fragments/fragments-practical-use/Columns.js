@@ -1,7 +1,5 @@
 // REACT FRAGMENTS PRACTICAL USE CASE
 
-import React from "react";
-
 function Columns() {
   return (
     <React.Fragment>

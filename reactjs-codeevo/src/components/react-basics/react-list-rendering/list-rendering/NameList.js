@@ -1,5 +1,5 @@
 // RENDERING LISTS IN REACT JS
-import React from "react";
+
 // import PetersItem from "./PetersItem";
 
 //RENDERING LIST WITHOUT ANY LOOP.

@@ -1,5 +1,5 @@
 // PRACTICAL REACT JS
-import React from "react";
+
 // import ReactIcons from "./react-icons/ReactIcons";
 // import ReactToastify from "./react-toastify/ReactToastify";
 // import ReactModal from "./react-modal/ReactModal";

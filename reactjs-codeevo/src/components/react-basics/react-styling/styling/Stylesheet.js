@@ -1,5 +1,5 @@
 // STYLING REACT JS COMPONENTS.
-import React from "react";
+
 import "./Stylesheet.css";
 import styles from "./Stylesheet.module.css";
 

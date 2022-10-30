@@ -1,4 +1,3 @@
-import React from "react";
 import ParentComp from "./memo-and-pure-components/ParentComp";
 import PureComp from "./pure-component/PureComp";
 

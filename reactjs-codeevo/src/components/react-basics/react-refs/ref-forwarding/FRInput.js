@@ -1,5 +1,4 @@
 // REF FORWARDING IN REACT JS
-import React from "react";
 
 // function FRInput() {
 //   return (

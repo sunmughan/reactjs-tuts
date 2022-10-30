@@ -1,5 +1,5 @@
 // CUSTOM HOOKS IN REACT JS
-import React from "react";
+
 // import CounterOne from "./custom-hooks/counter/CounterOne";
 // import CounterTwo from "./custom-hooks/counter/CounterTwo";
 // import DocTitleOne from "./custom-hooks/doc-title/DocTitleOne";

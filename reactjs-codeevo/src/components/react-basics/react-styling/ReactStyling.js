@@ -1,4 +1,3 @@
-import React from "react";
 import Stylesheet from "./styling/Stylesheet";
 import "./styling/Stylesheet.css";
 

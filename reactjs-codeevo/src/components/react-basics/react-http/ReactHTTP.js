@@ -1,4 +1,3 @@
-import React from "react";
 import PostList from "./http/PostList";
 import PostForm from "./http/PostForm";
 

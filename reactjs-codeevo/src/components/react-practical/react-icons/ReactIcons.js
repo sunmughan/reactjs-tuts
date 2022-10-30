@@ -1,5 +1,5 @@
 // ICONS USING REACT ICONS IN REACT JS
-import React from "react";
+
 import { IconContext } from "react-icons";
 import { FaReact } from "react-icons/fa";
 import { MdAccessAlarm } from "react-icons/md";

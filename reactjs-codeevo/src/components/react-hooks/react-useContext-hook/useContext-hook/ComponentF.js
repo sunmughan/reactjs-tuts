@@ -1,5 +1,5 @@
 // CONSUMING THE VALUE OF CONTEXT NORMALLY IN REACT JS
-import React from "react";
+
 import { UserContext, ChannelContext } from "../ReactUseContextHook";
 
 const ComponentF = () => {

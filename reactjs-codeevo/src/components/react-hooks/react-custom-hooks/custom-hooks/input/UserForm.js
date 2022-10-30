@@ -1,6 +1,6 @@
 // CUSTOM HOOKS IN REACT JS
 // INPUT HOOK
-import React from "react";
+
 import useInput from "../../../../../hooks/useInput";
 
 const UserForm = () => {

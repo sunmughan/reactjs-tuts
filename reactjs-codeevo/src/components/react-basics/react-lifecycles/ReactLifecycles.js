@@ -1,4 +1,3 @@
-import React from "react";
 import LifecycleA from "./lifecycles/LifecycleA";
 
 const ReactLifecycles = () => {

@@ -1,4 +1,3 @@
-import React from "react";
 import { BounceLoader, BarLoader, BeatLoader } from "react-spinners";
 import { css } from "@emotion/react";
 

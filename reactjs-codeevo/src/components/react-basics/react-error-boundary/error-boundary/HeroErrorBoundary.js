@@ -1,5 +1,4 @@
 // ERROR BOUNDARY IN REACT JS.
-import React from "react";
 
 function HeroErrorBoundary({ name }) {
   if (name === "Sand Man") {

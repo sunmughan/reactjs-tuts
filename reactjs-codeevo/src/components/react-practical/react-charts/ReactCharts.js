@@ -1,5 +1,5 @@
 // CHARTS IN REACT JS
-import React from "react";
+
 import BarChart from "./BarChart";
 import DoughnutChart from "./DoughnutChart";
 import LineChart from "./LineChart";

@@ -1,4 +1,3 @@
-import React from "react";
 import PortalDemo from "./portals/PortalDemo";
 
 const ReactPortals = () => {

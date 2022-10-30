@@ -1,4 +1,3 @@
-import React from "react";
 import Table from "./fragments-practical-use/Table";
 import FragmentDemo from "./fragments/FragmentDemo";
 

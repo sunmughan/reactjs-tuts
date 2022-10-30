@@ -1,5 +1,4 @@
 // RENDERING LISTS IN REACT JS
-import React from "react";
 
 function PetersItem({ sh }) {
   return (

@@ -1,5 +1,5 @@
 // PROPS AND STATES IN REACT JS
-import React from "react";
+
 import GreetWithProp from "./props/GreetWithProp";
 import GreetWithPropC from "./props/GreetWithPropC";
 import Message from "./states/Message";

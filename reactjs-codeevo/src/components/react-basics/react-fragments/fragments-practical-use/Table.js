@@ -1,5 +1,5 @@
 // REACT FRAGMENTS PRACTICAL USE CASE
-import React from "react";
+
 import Columns from "./Columns";
 
 function Table() {

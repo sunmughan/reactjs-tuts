@@ -1,5 +1,4 @@
 // USECALLBACK HOOK IN REACT JS
-import React from "react";
 
 const Title = () => {
   console.log("Rendering Title");

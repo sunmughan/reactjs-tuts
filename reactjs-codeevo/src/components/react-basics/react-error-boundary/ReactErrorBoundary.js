@@ -1,4 +1,3 @@
-import React from "react";
 import ErrorBoundary from "./error-boundary/ErrorBoundary";
 import HeroErrorBoundary from "./error-boundary/HeroErrorBoundary";
 

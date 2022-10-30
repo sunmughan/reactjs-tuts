@@ -1,5 +1,5 @@
 // RENDERING LISTS IN REACT JS
-import React from "react";
+
 import NameList from "./list-rendering/NameList";
 
 const ReactListRendering = () => {

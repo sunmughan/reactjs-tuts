@@ -1,5 +1,3 @@
-import React from "react";
-
 const FormikControls = (props) => {
   const { control } = props;
   switch (control) {

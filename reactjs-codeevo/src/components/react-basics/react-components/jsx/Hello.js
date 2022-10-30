@@ -1,5 +1,4 @@
 // JSX IN REACT JS
-import React from "react";
 
 const Hello = () => {
   // WITH JSX

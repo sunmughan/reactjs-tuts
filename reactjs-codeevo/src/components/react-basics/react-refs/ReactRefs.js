@@ -1,4 +1,3 @@
-import React from "react";
 import FRParentInput from "../../FRParentInput";
 import FocusInput from "./refs/FocusInput";
 import RefsDemo from "./refs/RefsDemo";

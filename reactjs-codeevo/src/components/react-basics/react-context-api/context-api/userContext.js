@@ -1,5 +1,4 @@
 // REACT JS CONTEXT API
-import React from "react";
 
 const UserContext = React.createContext("SPIDER MAN");
 

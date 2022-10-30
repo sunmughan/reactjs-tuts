@@ -1,4 +1,3 @@
-import React from "react";
 import ClickCounterTwo from "./render-props/ClickCounterTwo";
 import CounterRenderProps from "./render-props/CounterRenderProps";
 import HoverCounterTwo from "./render-props/HoverCounterTwo";

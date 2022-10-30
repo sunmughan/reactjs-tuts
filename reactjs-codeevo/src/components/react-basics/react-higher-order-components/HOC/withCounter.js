@@ -1,5 +1,3 @@
-import React from "react";
-
 const withCounter = (WrappedComponent, incrementNumber) => {
   // GIVING NAME TO THE PROPS.
   //   class WithCounter extends React.Component {

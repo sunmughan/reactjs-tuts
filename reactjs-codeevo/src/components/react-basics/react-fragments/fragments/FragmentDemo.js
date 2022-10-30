@@ -1,5 +1,4 @@
 // FRAGMENTS IN REACT JS
-import React from "react";
 
 function FragmentDemo() {
   // USUAL APPROACH.

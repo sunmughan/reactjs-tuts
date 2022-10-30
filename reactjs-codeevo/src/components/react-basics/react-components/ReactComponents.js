@@ -1,5 +1,5 @@
 // COMPONENTS IN REACT JS
-import React from "react";
+
 import Greet from "./functional-component/Greet";
 import Welcome from "./class-component/Welcome";
 import Hello from "./jsx/Hello";

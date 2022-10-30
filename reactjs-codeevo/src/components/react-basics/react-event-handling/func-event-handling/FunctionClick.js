@@ -1,5 +1,4 @@
 // EVENT HANDLING IN FUNCTIONAL COMPONENT IN REACT JS
-import React from "react";
 
 const FunctionClick = () => {
   const clickHandler = () => {

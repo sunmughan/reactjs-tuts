@@ -1,5 +1,5 @@
 // SIMPLE FORM IN REACT JS
-import React from "react";
+
 import styles from "./YouTubeForm.module.css";
 import { useFormik } from "formik";
 import * as Yup from "yup";

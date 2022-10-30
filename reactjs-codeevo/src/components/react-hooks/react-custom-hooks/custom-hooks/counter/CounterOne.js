@@ -1,6 +1,6 @@
 // CUSTOM HOOKS IN REACT JS
 // DOCUMENT TITLE HOOK
-import React from "react";
+
 import useCounter from "../../../../../hooks/useCounter";
 
 const CounterOne = () => {

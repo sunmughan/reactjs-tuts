@@ -1,5 +1,5 @@
 // Doughnut CHART IN REACT JS
-import React from "react";
+
 import { Doughnut } from "react-chartjs-2";
 // import Chart from "chart.js/auto";
 
