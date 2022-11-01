@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router-dom";
 // import ReactPractical from "./components/react-practical/ReactPractical";
 // import ReactFormik from "./compon11ents/react-formik/ReactFormik";
 import About from "./components/react-router/react-router-components/About";
+import Admin from "./components/react-router/react-router-components/Admin";
 import FeaturedProducts from "./components/react-router/react-router-components/FeaturedProducts";
 import Home from "./components/react-router/react-router-components/Home";
 import Navbar from "./components/react-router/react-router-components/Navbar";
@@ -12,6 +13,8 @@ import NewProducts from "./components/react-router/react-router-components/NewPr
 import NoMatch from "./components/react-router/react-router-components/NoMatch";
 import OrderSummary from "./components/react-router/react-router-components/OrderSummary";
 import Products from "./components/react-router/react-router-components/Products";
+import UserDetails from "./components/react-router/react-router-components/UserDetails";
+import Users from "./components/react-router/react-router-components/Users";
 
 class App extends Component {
   render() {
@@ -27,6 +30,16 @@ class App extends Component {
             <Route path="featured" element={<FeaturedProducts />} />
             <Route path="new" element={<NewProducts />} />
           </Route>
+          {/* <Route path="/users" element={<Users />} />
+          <Route path="/users/:userId" element={<UserDetails />} />
+          <Route path="/users/admin" element={<Admin />} /> */}
+          <Route path="/users" element={<Users />}>
+            <Route path=":userId" element={<UserDetails />} />
+            <Route path="admin" element={<Admin />} />
+          </Route>
+          {/* <Route path="/users/1" element={<UserDetails />} />
+          <Route path="/users/2" element={<UserDetails />} />
+          <Route path="/users/3" element={<UserDetails />} /> */}
           <Route path="*" element={<NoMatch />} />
         </Routes>
         {/*       <div className="App">*/}
