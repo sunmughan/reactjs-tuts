@@ -180,7 +180,7 @@ const About = () => {
         laoreet ornare lacinia. Suspendisse vel molestie augue, sit amet
         hendrerit quam. Praesent vitae efficitur mauris. Ut ultrices rutrum
         eros, quis vehicula velit vehicula ut. Mauris in erat sit amet libero
-        luctus scelerisque vel a lectus.
+        luctus scelerisque vel a lectus
       </p>
     </div>
   );
