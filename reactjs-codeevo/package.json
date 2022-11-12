@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^13.5.0",
     "@tippyjs/react": "^4.2.6",
     "axios": "^0.27.2",
+    "babel-preset-es2015": "^6.24.1",
     "chart.js": "^3.9.1",
     "formik": "^2.2.9",
     "react": "^18.2.0",
